@@ -14,4 +14,6 @@ dbcc showcontig('t1')
 --fixe Längen müssen in eine Seite passen
 
 
+
+
 create table t34 (id int, spx char(4100),spy char(4100))

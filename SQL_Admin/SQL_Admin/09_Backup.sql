@@ -1,3 +1,7 @@
+Backup Verschlüssel.. 
+TDE
+
+
 --VOLL
 BACKUP DATABASE [Northwind] TO  DISK = N'D:\_BACKUP\Northxxwind.bak' WITH NOFORMAT, NOINIT,  NAME = N'Northwind-Full', SKIP, NOREWIND, NOUNLOAD,  STATS = 10
 GO
@@ -190,11 +194,43 @@ VVVV DDD TTT D TT
 
 
 
+--Wie lautet der Plan zur Sicherung folgender DB
+
+-- Größe der DB:   120GB
+--Wie lange darf die DB ausfallen in min?								2 Std
+--Wieviel Datenverlust darf entstanden sein in min?           1 Std
+
+--Arbeitszeiten: Mo bis Fr
+--Uhr                    7 Uhr bis 17 Uhr
+
+
+--V
+--keine 10min, DB ONLINE
+
+select 120000/300/60
+
+--MO bis FR V einmal am Tag: 21 Uhr
+
+--T jede Stunde ..das kann zu lange --> alle 30min Mo bis Fr  /.30 bis 17:30 oder 17:00
+
+
+ --D alle 3 bis 4 Ts
+ --Mo bis FR   alle 2 Stunden 9:15 D  
 
 
 
+ -- Größe der DB:   1200GB
+--Wie lange darf die DB ausfallen in min?								30min
+--Wieviel Datenverlust darf entstanden sein in min?           5min
 
+-->HADR  Hochverfügbarkeit  Ausfallzeit von ca 3 Sek ohne Datenverlust
+--Hochverfügbarkeitsgruppen
 
+..---nwind.bak
+.--.alles in eine Datein: no!!!
+--jede Sicherung sollte eine eig Datei werden
+
+-
 
 
 

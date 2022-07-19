@@ -30,3 +30,11 @@ c:backup..model..model_2022_07_18_1430236523.bak
 
 
 --Tipp: Wartungsplan.. Sicherung SystemDBs
+
+
+Ola Hallengreen
+
+--SA kennt keiner
+--lok admin kommt rein
+--Rechte auf Tabellen  weggenommen versehentlich 
+

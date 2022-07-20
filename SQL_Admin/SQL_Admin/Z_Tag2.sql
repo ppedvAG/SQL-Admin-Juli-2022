@@ -57,3 +57,72 @@ create database testdb
 
 --physikalische Design
 ----Seiten  (8192bytes)  8 Seiten am Stück = Block
+
+
+
+/*
+
+Restore einer DB
+
+--Verz DEMO ... nichts drin
+
+--Security
+--Zugriff braucht der benutzer der das ausführt
+-- Zugriff auf ext Ressourcen, wird immer mit dem Dienstkonto erledigt
+---- bei Zeitplan = Agent
+----ohne =SQL Dienst
+
+auf lokale Ressourcen wird immer das NT Service KOnto verwendet
+auf remote Ressourcen wird das DOMKonto
+
+schulung\svcSQL
+
+--Dateiendung  evtl fehlt diese-- alle anzeigen lassen
+--beim Anzeigen von Laufwerken in SSMS sind immer die lok LW des SQL Servers gemeint
+
+--kein Restore auf älteren SQL Serverf Versionen von neueren DBs
+
+select @@microsoftversion
+
+*/
+use master
+--eine DB mit Restoring Zustand lauffähig machen
+restore database restoremedb
+
+
+--25 sec
+select 1600/25  ---64MB/sec
+--2 sec
+select 1100/2 ---550 MB/sec
+
+--JamesBond hat keinen Zugriff mehr auf whoamiDB?
+--> kein Login 
+
+--wenn mann DB von einem anderen Server restored, dann fehlen neben Logins
+--auch Aufträge 
+
+
+--Login reparieren
+
+--neuesLogin
+--JamesBond SID 15    User: SID 26
+
+--Workaround
+--ideale Rechtevergabe
+--Lösche JamesBond aus DB
+--Login anlegebn--> Usermapping-- Rollenmitgliedschaft wieder pflegen
+
+
+--verwaiste User einer DB
+sp_change_users_login 'Report'
+
+--Login wird apssend zum User angelegt
+sp_change_users_login 'Auto_fix' 'JamesBond', ,NULL, 'ppedvag01!'
+
+--Usermapping
+-sp_change_users_login 'Update_one', 'JamesBond', 'JamesBond' 
+
+--
+
+
+

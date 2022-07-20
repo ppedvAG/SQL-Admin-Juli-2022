@@ -103,6 +103,30 @@
           <AssociatedConnUserName />
           <FullPath>11_Security.sql</FullPath>
         </FileNode>
+        <FileNode Name="12_containedDB.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HRSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>HRSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>12_containedDB.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13_Richtlinien.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>13_Richtlinien.sql</FullPath>
+        </FileNode>
+        <FileNode Name="15_UserMonitor.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>15_UserMonitor.sql</FullPath>
+        </FileNode>
+        <FileNode Name="16_Audit.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>16_Audit.sql</FullPath>
+        </FileNode>
         <FileNode Name="2 TDE backup_restore.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -115,11 +139,29 @@
           <AssociatedConnUserName />
           <FullPath>instnwnd.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
+        <FileNode Name="Nützliche URLS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HRSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>HRSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Nützliche URLS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="sp_help_revlogin.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
+          <FullPath>sp_help_revlogin.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery3.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery3.sql</FullPath>
         </FileNode>
         <FileNode Name="Z_Tag2.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
@@ -130,7 +172,14 @@
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
-      <Items />
+      <Items>
+        <FileNode Name="SQLPOL.zip">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLPOL.zip</FullPath>
+        </FileNode>
+      </Items>
     </LogicalFolder>
   </Items>
 </SqlWorkbenchSqlProject>
